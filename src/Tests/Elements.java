@@ -1,10 +1,13 @@
+package Tests;
+
+import Utilities.NewDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Precondition {
+public class Elements {
 
-    public Precondition() {
+    public Elements() {
         PageFactory.initElements(NewDriver.driver, this);
     }
 
@@ -32,31 +35,31 @@ public class Precondition {
     public WebElement loginButton;
 
 
-    @FindBy(xpath = "//a[.='Phones']")
+    @FindBy(xpath = "//a[text()='Phones']")
     public WebElement phones;
 
-    @FindBy(xpath = "//a[.='Laptops']")
-    public WebElement laptops;
-
-    @FindBy(xpath = "//a[.='Monitors']")
-    public WebElement monitors;
-
-    @FindBy(id = "logout2")
-    public WebElement logout;
-
-    @FindBy(xpath = "//a[.='Samsung galaxy s6']")
-    public WebElement samsungGalaxy;
-
-    @FindBy(xpath = "//a[.='Add to cart']")
-    public WebElement addProduct;
-
-    @FindBy(xpath = "//*[@id=\"navbarExample\"]/ul/li[1]/a")
-    public WebElement home;
-
-    @FindBy(id = "cartur")
-    public WebElement cart;
-
-    @FindBy(xpath = "//button[.='Place Order']")
-    public WebElement placeOrder;
+//    @FindBy(xpath = "//a[.='Laptops']")
+//    public WebElement laptops;
+//
+//    @FindBy(xpath = "//a[.='Monitors']")
+//    public WebElement monitors;
+//
+//    @FindBy(id = "logout2")
+//    public WebElement logout;
+//
+//    @FindBy(xpath = "//a[.='Samsung galaxy s6']")
+//    public WebElement samsungGalaxy;
+//
+//    @FindBy(xpath = "//a[.='Add to cart']")
+//    public WebElement addProduct;
+//
+//    @FindBy(xpath = "//*[@id=\"navbarExample\"]/ul/li[1]/a")
+//    public WebElement home;
+//
+//    @FindBy(id = "cartur")
+//    public WebElement cart;
+//
+//    @FindBy(xpath = "//button[.='Place Order']")
+//    public WebElement placeOrder;
 
 }
