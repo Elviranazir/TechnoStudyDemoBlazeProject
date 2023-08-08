@@ -36,30 +36,33 @@ public class Elements {
 
 
     @FindBy(xpath = "//a[text()='Phones']")
-    public WebElement phones;
+    public WebElement phonesButton;
 
-//    @FindBy(xpath = "//a[.='Laptops']")
-//    public WebElement laptops;
-//
-//    @FindBy(xpath = "//a[.='Monitors']")
-//    public WebElement monitors;
-//
-//    @FindBy(id = "logout2")
-//    public WebElement logout;
-//
-//    @FindBy(xpath = "//a[.='Samsung galaxy s6']")
-//    public WebElement samsungGalaxy;
-//
-//    @FindBy(xpath = "//a[.='Add to cart']")
-//    public WebElement addProduct;
-//
-//    @FindBy(xpath = "//*[@id=\"navbarExample\"]/ul/li[1]/a")
-//    public WebElement home;
-//
-//    @FindBy(id = "cartur")
-//    public WebElement cart;
-//
-//    @FindBy(xpath = "//button[.='Place Order']")
-//    public WebElement placeOrder;
+    @FindBy(linkText = "Samsung galaxy s6")
+    public WebElement phoneCheck;
+
+    @FindBy(xpath = "//a[.='Laptops']")
+    public WebElement laptops;
+
+    @FindBy(xpath = "//a[.='Monitors']")
+    public WebElement monitors;
+
+    @FindBy(id = "logout2")
+    public WebElement logout;
+
+    @FindBy(xpath = "//a[.='Samsung galaxy s6']")
+    public WebElement samsungGalaxy;
+
+    @FindBy(xpath = "//a[.='Add to cart']")
+    public WebElement addProduct;
+
+    @FindBy(xpath = "//*[@id=\"navbarExample\"]/ul/li[1]/a")
+    public WebElement home;
+
+    @FindBy(id = "cartur")
+    public WebElement cart;
+
+    @FindBy(xpath = "//button[.='Place Order']")
+    public WebElement placeOrder;
 
 }
